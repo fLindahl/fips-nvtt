@@ -1,0 +1,11 @@
+#
+# fips-nvtt
+#
+---
+
+exports:
+    header-dirs: 
+    - nvidia-texture-tools/include/
+    modules :
+        nvtt: .
+
