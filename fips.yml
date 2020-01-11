@@ -2,10 +2,18 @@
 # fips-nvtt
 #
 ---
+imports:
+    fips-stb:
+        git: https://github.com/fips-libs/fips-stb.git
 
 exports:
     header-dirs: 
-    - nvidia-texture-tools/include/
+    - nvidia-texture-tools/src/
+    - nvidia-texture-tools/extern/poshlib/
+    - .
+    
     modules :
         nvtt: .
 
+    defines :
+        NVTT_EXPORTS : 1
